@@ -16,7 +16,7 @@ A fast, minimalist, academic personal website inspired by [sukratii.github.io](h
 2. **Core Sections**:
    - **About Me**: Narrative connecting large-scale Google infrastructure, cryptography, and LLM agent tool sandboxing to technical AI safety.
    - **Industry Experience**: Google London (SWE III), Media.net (SDE), Cisco (SDE Intern).
-   - **AI Projects**: Recobee (LLM script quality assessment) and FakeAndCatch (voice synthesis & security app).
+   - **Projects**: Recobee (LLM script quality assessment) and FakeAndCatch (voice synthesis & security app).
    - **Publications & Education**: Academic research paper on personality prediction (with ResearchGate & GitHub links + BibTeX modal), B.Tech IT from MNNIT Prayagraj (CPI 9.07, top 10), JEE ranks, Vibrant Academy, S.N. Public School, and St. Mary's School & College.
    - **Certifications & Courses**: DeepLearning.AI GenAI, Deep Learning specialization, and BlueDot Impact Technical AI Safety.
    - **Competitive Rigor**: Codeforces Expert (1749), CodeChef 5-Star (2034), Google Kickstart Top Ranks, and IIT JEE Advanced (AIR 4683).
