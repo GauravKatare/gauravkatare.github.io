@@ -46,8 +46,6 @@
 
         <div class="profile-badges">
           <span class="badge-pill status">Open to Safety Roles</span>
-          <span class="badge-pill">Coursera Certified</span>
-          <span class="badge-pill">BlueDot AI Safety</span>
         </div>
       </div>
 
@@ -55,9 +53,8 @@
       <nav aria-label="Sidebar Navigation">
         <ul class="sidebar-nav">
           <li><a href="#about" class="active">About Me</a></li>
-          <li><a href="#focus">Safety Focus Areas</a></li>
-          <li><a href="#projects">Projects</a></li>
           <li><a href="#experience">Industry Experience</a></li>
+          <li><a href="#projects">AI Projects</a></li>
           <li><a href="#publications">Publications &amp; Education</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#honors">Competitive Coding</a></li>
@@ -130,111 +127,10 @@
 
         <hr>
 
-        <!-- ── SECTION: RESEARCH & SAFETY FOCUS ── -->
-        <section id="focus">
-          <div class="section-header">
-            <h2>Safety Research Focus Areas</h2>
-          </div>
-
-          <div class="focus-grid">
-            <div class="focus-card">
-              <span class="focus-icon">🔬</span>
-              <h4 class="focus-title">Mechanistic Interpretability</h4>
-              <p class="focus-desc">
-                Reverse-engineering internal transformer circuits. Implementing induction heads, activation patching, path patching, and analyzing residual streams to understand model internals and prevent deceptive alignment.
-              </p>
-            </div>
-
-            <div class="focus-card">
-              <span class="focus-icon">🛡️</span>
-              <h4 class="focus-title">Agent Sandboxing &amp; Governance</h4>
-              <p class="focus-desc">
-                Hardening agent execution environments using Model Context Protocol (MCP) and cryptographic verification to prevent prompt injection, tool hijacking, unauthorized file access, and rogue autonomous behavior.
-              </p>
-            </div>
-
-            <div class="focus-card">
-              <span class="focus-icon">🎯</span>
-              <h4 class="focus-title">Model Evaluations &amp; Scheming</h4>
-              <p class="focus-desc">
-                Designing empirical evaluation benchmarks and red-teaming frameworks to detect whether models behave safely because they are genuinely aligned, or whether they have learned to scheme during testing.
-              </p>
-            </div>
-
-            <div class="focus-card">
-              <span class="focus-icon">⚡</span>
-              <h4 class="focus-title">Safety Infrastructure &amp; Scaling</h4>
-              <p class="focus-desc">
-                Applying production-grade distributed systems (C++, high-concurrency IO, scalable registries) to run large-scale automated interpretability probes, dictionary learning (SAEs), and continuous alignment checks.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <hr>
-
-        <!-- ── SECTION: PROJECTS ── -->
-        <section id="projects">
-          <div class="section-header">
-            <h2>Projects</h2>
-          </div>
-
-          <!-- Recobee AI Script Evaluation -->
-          <article class="project-card">
-            <div class="project-meta">
-              <h3 class="project-title">Recobee</h3>
-              <span class="project-date">Recobee</span>
-            </div>
-            <div class="project-badges">
-              <span class="tag evals">LLM Systems</span>
-              <span class="tag">AWS Lambda</span>
-              <span class="tag">Bedrock</span>
-              <span class="tag">SageMaker</span>
-            </div>
-            <p class="project-desc">
-              Building AI systems to assess script quality for film/TV production using LLMs at Recobee.
-            </p>
-            <ul class="project-bullets">
-              <li>Architected an asynchronous pipeline using AWS Bedrock, SageMaker, and AWS Lambda to process large-context documents with chunked evaluation strategies.</li>
-              <li><strong>Technologies used:</strong> AWS Lambda, Bedrock, SageMaker, Python.</li>
-            </ul>
-          </article>
-
-          <!-- FakeAndCatch Project -->
-          <article class="project-card">
-            <div class="project-meta">
-              <h3 class="project-title">FakeAndCatch</h3>
-              <span class="project-date">Security &amp; Speech AI</span>
-            </div>
-            <div class="project-badges">
-              <span class="tag systems">Voice Synthesis</span>
-              <span class="tag">Security</span>
-              <span class="tag">Python</span>
-              <span class="tag">Google Colab</span>
-            </div>
-            <p class="project-desc">
-              Developed an Android application for security agencies that enables them to create custom voice messages in a specified person's voice.
-            </p>
-            <ul class="project-bullets">
-              <li>Engineered voice cloning and speech generation models leveraging Python and Google Colab environments.</li>
-              <li>Integrated client-side mobile workflow enabling authorized security agencies to produce voice assets.</li>
-              <li><strong>Technologies used:</strong> Python, Google Colab, Android.</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/GauravKatare/FakeAndCatch" target="_blank" rel="noopener noreferrer" class="project-link-btn">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle; margin-right:4px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                View on GitHub ➔
-              </a>
-            </div>
-          </article>
-        </section>
-
-        <hr>
-
-        <!-- ── SECTION: EXPERIENCE ── -->
+        <!-- ── SECTION: INDUSTRY EXPERIENCE ── -->
         <section id="experience">
           <div class="section-header">
-            <h2>Production Engineering Experience</h2>
+            <h2>Industry Experience</h2>
           </div>
 
           <div class="timeline">
@@ -293,6 +189,64 @@
               </ul>
             </div>
           </div>
+        </section>
+
+        <hr>
+
+        <!-- ── SECTION: AI PROJECTS ── -->
+        <section id="projects">
+          <div class="section-header">
+            <h2>AI Projects</h2>
+          </div>
+
+          <!-- Recobee AI Script Evaluation -->
+          <article class="project-card">
+            <div class="project-meta">
+              <h3 class="project-title">Recobee</h3>
+              <span class="project-date">Recobee</span>
+            </div>
+            <div class="project-badges">
+              <span class="tag evals">LLM Systems</span>
+              <span class="tag">AWS Lambda</span>
+              <span class="tag">Bedrock</span>
+              <span class="tag">SageMaker</span>
+            </div>
+            <p class="project-desc">
+              Building AI systems to assess script quality for film/TV production using LLMs at Recobee.
+            </p>
+            <ul class="project-bullets">
+              <li>Architected an asynchronous pipeline using AWS Bedrock, SageMaker, and AWS Lambda to process large-context documents with chunked evaluation strategies.</li>
+              <li><strong>Technologies used:</strong> AWS Lambda, Bedrock, SageMaker, Python.</li>
+            </ul>
+          </article>
+
+          <!-- FakeAndCatch Project -->
+          <article class="project-card">
+            <div class="project-meta">
+              <h3 class="project-title">FakeAndCatch</h3>
+              <span class="project-date">Security &amp; Speech AI</span>
+            </div>
+            <div class="project-badges">
+              <span class="tag systems">Voice Synthesis</span>
+              <span class="tag">Security</span>
+              <span class="tag">Python</span>
+              <span class="tag">Google Colab</span>
+            </div>
+            <p class="project-desc">
+              Developed an Android application for security agencies that enables them to create custom voice messages in a specified person's voice.
+            </p>
+            <ul class="project-bullets">
+              <li>Engineered voice cloning and speech generation models leveraging Python and Google Colab environments.</li>
+              <li>Integrated client-side mobile workflow enabling authorized security agencies to produce voice assets.</li>
+              <li><strong>Technologies used:</strong> Python, Google Colab, Android.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/GauravKatare/FakeAndCatch" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle; margin-right:4px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                View on GitHub ➔
+              </a>
+            </div>
+          </article>
         </section>
 
         <hr>
