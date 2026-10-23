@@ -56,12 +56,10 @@
         <ul class="sidebar-nav">
           <li><a href="#about" class="active">About Me</a></li>
           <li><a href="#focus">Safety Focus Areas</a></li>
-          <li><a href="#lab">Interactive Circuit Lab</a></li>
-          <li><a href="#projects">Research &amp; Projects</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#experience">Industry Experience</a></li>
           <li><a href="#publications">Publications &amp; Education</a></li>
           <li><a href="#honors">Competitive Coding</a></li>
-          <li><a href="#notes">Distillations &amp; Notes</a></li>
         </ul>
       </nav>
 
@@ -173,186 +171,17 @@
 
         <hr>
 
-        <!-- ── SECTION: INTERACTIVE INTERP LAB ── -->
-        <section id="lab">
-          <div class="section-header">
-            <h2>Interactive Safety Lab: Induction Circuit</h2>
-            <span class="lab-badge">ARENA Module 1</span>
-          </div>
-
-          <p class="body-text">
-            In mechanistic interpretability, <strong>induction heads</strong> are the primary 2-layer attention mechanism responsible for in-context learning in transformers (first formalized by Anthropic in <em>A Mathematical Framework for Transformer Circuits</em>). They detect repeated token patterns of the form:
-            <code style="background:var(--code-bg); padding:2px 6px; border-radius:4px; font-family:var(--font-mono); color:var(--code-text);">[A][B] ... [A] ➔ [B]</code>
-          </p>
-
-          <div class="lab-container">
-            <div class="lab-header">
-              <div>
-                <h4 class="lab-title">Transformer Induction Head Visualizer</h4>
-                <p class="lab-subtitle">Test in-context pattern completion and observe circuit ablation in real time.</p>
-              </div>
-            </div>
-
-            <div class="lab-controls">
-              <span style="font-size:0.8rem; font-weight:600; color:var(--text-light); margin-right:4px;">Presets:</span>
-              <button class="lab-preset-btn active" data-preset="alice">Alice &amp; Bob</button>
-              <button class="lab-preset-btn" data-preset="code">Code Function</button>
-              <button class="lab-preset-btn" data-preset="pattern">Greek Tokens</button>
-            </div>
-
-            <div class="lab-input-group">
-              <label for="interp-input" class="lab-input-label">Prompt Token Sequence (Editable):</label>
-              <input type="text" id="interp-input" class="lab-input" value="Alice and Bob went to the park. Later, Alice and">
-            </div>
-
-            <!-- Live Token Stream Display -->
-            <div class="circuit-viz">
-              <div style="font-size:0.78rem; font-weight:700; text-transform:uppercase; color:var(--text-light); margin-bottom:0.6rem;">
-                Residual Stream Tokens &amp; Attention Routing:
-              </div>
-              <div class="token-stream" id="token-stream">
-                <!-- Dynamically populated by interp-demo.js -->
-              </div>
-
-              <!-- Two-Step Circuit Explanation -->
-              <div class="circuit-steps">
-                <div class="circuit-step-card">
-                  <span class="step-badge">Step 1: Layer 0 Previous-Token Head</span>
-                  <div class="step-card-title">Positional Shift</div>
-                  <p class="step-card-body" id="step-l0-desc">
-                    Previous-Token head carries the representation of the preceding token into the key vector of the following token.
-                  </p>
-                </div>
-
-                <div class="circuit-step-card">
-                  <span class="step-badge">Step 2: Layer 1 Induction Head</span>
-                  <div class="step-card-title">QK Match &amp; OV Copy</div>
-                  <p class="step-card-body" id="step-l1-desc">
-                    Induction Head queries current token [A] against previous [A] keys, then routes [B] to logit output via the OV circuit.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Knockout / Ablation Experiment -->
-              <div class="ablation-slider-box">
-                <div class="slider-info">
-                  Circuit Knockout Experiment: <strong>Head Weight: <span id="ablation-val">100%</span></strong>
-                  <div style="font-size:0.75rem; color:var(--text-light);">Simulate causal ablation on the induction head to observe confidence collapse.</div>
-                </div>
-                <input type="range" id="ablation-slider" class="slider-control" min="0" max="100" value="100" aria-label="Ablation weight slider">
-              </div>
-
-              <!-- Output Prediction -->
-              <div class="prediction-outcome">
-                <div>
-                  Next Token Prediction: <span class="outcome-tag" id="pred-token">"Bob"</span>
-                </div>
-                <div>
-                  Induction Confidence: <strong id="pred-prob" style="color:var(--heading);">92.4%</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <hr>
-
-        <!-- ── SECTION: RESEARCH & ENGINEERING PROJECTS ── -->
+        <!-- ── SECTION: PROJECTS ── -->
         <section id="projects">
           <div class="section-header">
-            <h2>Selected Projects &amp; Research</h2>
+            <h2>Projects</h2>
           </div>
 
-          <!-- Filter Navigation -->
-          <div class="filter-bar">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="safety">AI Safety &amp; Alignment</button>
-            <button class="filter-btn" data-filter="interp">Mechanistic Interp</button>
-            <button class="filter-btn" data-filter="agent">Agent Security &amp; MCP</button>
-            <button class="filter-btn" data-filter="systems">Systems Infrastructure</button>
-          </div>
-
-          <!-- Project 1: LLM Agent Tool Registry & Sandbox -->
-          <article class="project-card" data-category="safety agent systems">
-            <div class="project-meta">
-              <h3 class="project-title">Scalable Agent Tool Registry &amp; Sandboxed Execution (MCP &amp; AppFunctions)</h3>
-              <span class="project-date">Google | 2024 - Present</span>
-            </div>
-            <div class="project-badges">
-              <span class="tag systems">Google Infrastructure</span>
-              <span class="tag">Agent Governance</span>
-              <span class="tag">Model Context Protocol</span>
-              <span class="tag">Sandboxing</span>
-            </div>
-            <p class="project-desc">
-              Designed and deployed a high-QPS, secure tool discovery and execution registry for autonomous LLM agents operating at Google scale. Addressed critical agentic safety vulnerabilities including unauthorized resource invocation, execution privilege escalation, and tool hallucination.
-            </p>
-            <ul class="project-bullets">
-              <li>Architected resilient discovery protocols enabling agents to look up and dynamically bind tools adhering to strict sandbox boundaries and schema validations.</li>
-              <li>Engineered cryptographic isolation layers ensuring sensitive system APIs and external data access tokens are partitioned against indirect prompt injection.</li>
-              <li>Built real-time telemetry and auditing pipelines to log and evaluate multi-step agent trajectories for safety compliance and anomalous behavior detection.</li>
-            </ul>
-            <div class="project-links">
-              <a href="notes/mcp-agent-security.html" class="project-link-btn">Read Architecture Note ➔</a>
-            </div>
-          </article>
-
-          <!-- Project 2: ARENA Transformer Internals & Circuit Reverse Engineering -->
-          <article class="project-card" data-category="safety interp">
-            <div class="project-meta">
-              <h3 class="project-title">Transformer Circuit Reverse-Engineering &amp; Activation Patching</h3>
-              <span class="project-date">ARENA 3.0 Curriculum | 2025</span>
-            </div>
-            <div class="project-badges">
-              <span class="tag interp">Mechanistic Interpretability</span>
-              <span class="tag">PyTorch</span>
-              <span class="tag">TransformerLens</span>
-              <span class="tag">ARENA</span>
-            </div>
-            <p class="project-desc">
-              Comprehensive implementation and reverse engineering of transformer architectures from foundational linear algebra to complex circuits. Focused on identifying causal subgraphs responsible for specific linguistic and reasoning capabilities.
-            </p>
-            <ul class="project-bullets">
-              <li>Implemented complete GPT-2 and transformer architectures from scratch in PyTorch with custom attention caching and KV-cache mechanisms.</li>
-              <li>Conducted activation patching and path patching experiments on Indirect Object Identification (IOI) circuits to pinpoint name-mover heads and negative name-movers.</li>
-              <li>Investigated induction heads across multi-layer toy models, analyzing the QK and OV circuit eigenvalue spectra to verify copying and pattern matching properties.</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/GauravKatare" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Code on GitHub ➔</a>
-              <a href="notes/induction-heads-arena.html" class="project-link-btn">Interpretability Writeup ➔</a>
-            </div>
-          </article>
-
-          <!-- Project 3: Sparse Autoencoders (SAEs) Feature Dictionary Extraction -->
-          <article class="project-card" data-category="safety interp">
-            <div class="project-meta">
-              <h3 class="project-title">Dictionary Learning with Sparse Autoencoders (SAEs)</h3>
-              <span class="project-date">ARENA &amp; Independent Study | 2025</span>
-            </div>
-            <div class="project-badges">
-              <span class="tag interp">Mechanistic Interp</span>
-              <span class="tag">Dictionary Learning</span>
-              <span class="tag">Superposition</span>
-              <span class="tag">Sparse Autoencoders</span>
-            </div>
-            <p class="project-desc">
-              Tackling the challenge of neural superposition by training sparse autoencoders to disentangle polysemantic neuron activations in transformer residual streams into interpretable, monosemantic feature directions.
-            </p>
-            <ul class="project-bullets">
-              <li>Trained JumpReLU and Top-K sparse autoencoders on intermediate activations of language models to discover latent safety-relevant features.</li>
-              <li>Evaluated dictionary quality using reconstruction loss (CE loss recovered) and feature sparsity metrics (L0 norm, dead feature ratio).</li>
-              <li>Explored automated feature labeling and circuit steering by clamping specific SAE latents during inference.</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/GauravKatare" target="_blank" rel="noopener noreferrer" class="project-link-btn">GitHub Repository ➔</a>
-            </div>
-          </article>
-
-          <!-- Project 4: Recobee AI Script Evaluation Engine -->
-          <article class="project-card" data-category="safety systems">
+          <!-- Recobee AI Script Evaluation Engine -->
+          <article class="project-card">
             <div class="project-meta">
               <h3 class="project-title">Recobee: LLM Evaluation &amp; Script Quality Assessment Engine</h3>
-              <span class="project-date">Recobee | 2023 - 2024</span>
+              <span class="project-date">Recobee</span>
             </div>
             <div class="project-badges">
               <span class="tag evals">Model Evals</span>
@@ -361,7 +190,7 @@
               <span class="tag">Python</span>
             </div>
             <p class="project-desc">
-              Built an automated evaluation pipeline to analyze full-length television and film scripts using LLMs, assessing multi-faceted criteria including narrative cohesion, character arc consistency, and thematic tone.
+              Building AI systems to assess script quality for film/TV production using LLMs at Recobee. Architected an asynchronous pipeline to evaluate narrative consistency, character arcs, and quality metrics with multi-turn LLM reasoning.
             </p>
             <ul class="project-bullets">
               <li>Architected an asynchronous pipeline using AWS Bedrock, SageMaker, and AWS Lambda to process large-context documents with chunked evaluation strategies.</li>
@@ -371,28 +200,6 @@
             <div class="project-links">
               <a href="https://github.com/GauravKatare" target="_blank" rel="noopener noreferrer" class="project-link-btn">Code &amp; Pipelines ➔</a>
             </div>
-          </article>
-
-          <!-- Project 5: High-Throughput 1TB+ Parallel C++ Ingestion & Cryptographic Signing -->
-          <article class="project-card" data-category="systems">
-            <div class="project-meta">
-              <h3 class="project-title">High-Throughput Parallel Ingestion &amp; Quantum-Resistant Play Signing</h3>
-              <span class="project-date">Google London | 2022 - 2024</span>
-            </div>
-            <div class="project-badges">
-              <span class="tag systems">Distributed Systems</span>
-              <span class="tag">C++</span>
-              <span class="tag">Cryptography &amp; KMS</span>
-              <span class="tag">Security</span>
-            </div>
-            <p class="project-desc">
-              Engineered critical security and distribution infrastructure for Google Play, scaling upload systems to 40 GB payloads and handling petabyte-scale application validation with extreme reliability.
-            </p>
-            <ul class="project-bullets">
-              <li>Engineered a parallel ingestion and storage pipeline in C++ processing 1TB+ payload volumes with zero-copy async IO, optimizing chunking and eliminating tail latency bottlenecks.</li>
-              <li>Integrated post-quantum cryptographic signature validation into Play Signing to future-proof global app verification against quantum adversaries.</li>
-              <li>Restricted over 200+ compromised cryptographic signing certificate instances, safeguarding billions of Android end-users from unauthorized privilege execution.</li>
-            </ul>
           </article>
         </section>
 
@@ -625,57 +432,6 @@
           </div>
         </section>
 
-        <hr>
-
-        <!-- ── SECTION: SAFETY DISTILLATIONS & NOTES ── -->
-        <section id="notes">
-          <div class="section-header">
-            <h2>Safety Distillations &amp; Technical Notes</h2>
-          </div>
-
-          <p class="body-text" style="font-size:0.95rem;">
-            Technical summaries and deep dives written as part of my ARENA study and systems engineering explorations:
-          </p>
-
-          <ul class="notes-list">
-            <li class="note-item">
-              <div class="note-info">
-                <div class="note-title">
-                  <a href="notes/systems-to-safety-transition.html">From Google Production Scale to Frontier AI Safety: Why the Next Frontier of Alignment is Systems Engineering</a>
-                </div>
-                <div class="note-summary">
-                  Reflections on why high-throughput systems, cryptographic signing, and kernel-level sandboxing are crucial to prevent agentic scheming and unintended capability jumps.
-                </div>
-              </div>
-              <div class="note-meta">Essay &bull; 8 min read</div>
-            </li>
-
-            <li class="note-item">
-              <div class="note-info">
-                <div class="note-title">
-                  <a href="notes/mcp-agent-security.html">Securing the Model Context Protocol (MCP): Sandboxing Untrusted Tool Calls in Autonomous Agentic Systems</a>
-                </div>
-                <div class="note-summary">
-                  Lessons from building Google-scale tool registries applied to agent safety: token boundary isolation, permission hierarchies, and mitigation of indirect prompt injections.
-                </div>
-              </div>
-              <div class="note-meta">Technical Deep Dive &bull; 10 min read</div>
-            </li>
-
-            <li class="note-item">
-              <div class="note-info">
-                <div class="note-title">
-                  <a href="notes/induction-heads-arena.html">Deconstructing Induction Circuits in Transformers: An ARENA Implementation Walkthrough</a>
-                </div>
-                <div class="note-summary">
-                  A step-by-step breakdown of 2-layer attention circuits, the mathematical decomposition of QK and OV matrices, and ablation testing in TransformerLens.
-                </div>
-              </div>
-              <div class="note-meta">Tutorial &bull; 12 min read</div>
-            </li>
-          </ul>
-        </section>
-
         <!-- ── FOOTER ── -->
         <footer>
           <div>
@@ -715,6 +471,5 @@
 
   <!-- Scripts -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/interp-demo.js"></script>
 </body>
 </html>
