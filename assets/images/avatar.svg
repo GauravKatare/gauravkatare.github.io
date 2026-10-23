@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d3748"/>
+      <stop offset="50%" stop-color="#1a202c"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e07a5f"/>
+      <stop offset="100%" stop-color="#a63d2f"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a63d2f" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="100" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Circuit Lattice in background -->
+  <g stroke="rgba(255,255,255,0.08)" stroke-width="1.5">
+    <circle cx="100" cy="100" r="82" fill="none"/>
+    <circle cx="100" cy="100" r="62" fill="none" stroke-dasharray="4,4"/>
+    <line x1="20" y1="100" x2="180" y2="100"/>
+    <line x1="100" y1="20" x2="100" y2="180"/>
+  </g>
+
+  <!-- Accent Inner Glow Ring -->
+  <circle cx="100" cy="100" r="88" fill="url(#glowGrad)"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="url(#accentGrad)" stroke-width="2.5" opacity="0.8"/>
+
+  <!-- Stylized Figure / Silhouette & Monogram -->
+  <!-- Head Silhouette -->
+  <circle cx="100" cy="74" r="32" fill="#e2e8f0"/>
+  
+  <!-- Shoulders / Torso -->
+  <path d="M46 162 C46 122 70 114 100 114 C130 114 154 122 154 162 C140 178 122 188 100 188 C78 188 60 178 46 162 Z" fill="#cbd5e1"/>
+  
+  <!-- Subtle Glasses / Focus Accent -->
+  <path d="M84 72 Q92 74 100 72 Q108 74 116 72" fill="none" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Modern Monogram Badge (GK) -->
+  <rect x="76" y="132" width="48" height="24" rx="12" fill="url(#accentGrad)"/>
+  <text x="100" y="148" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">GK</text>
+  
+  <!-- AI Safety Node Accent on Top Right -->
+  <circle cx="152" cy="46" r="10" fill="#a63d2f"/>
+  <circle cx="152" cy="46" r="5" fill="#ffffff"/>
+  <line x1="124" y1="60" x2="144" y2="50" stroke="#a63d2f" stroke-width="1.5" stroke-dasharray="2,2"/>
+</svg>

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav Katare | AI Safety & Alignment Engineer</title>
+  <meta name="description" content="Gaurav Katare - Software Engineer III at Google London transitioning to Technical AI Safety & Alignment. Focused on mechanistic interpretability, agent tool sandboxing (MCP), and safety infrastructure.">
+  <meta name="keywords" content="Gaurav Katare, AI Safety, Machine Learning Safety, Mechanistic Interpretability, ARENA, BlueDot Impact, Google, SWE III, Model Context Protocol, Alignment, Transformer Circuits">
+  <meta name="author" content="Gaurav Katare">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gauravkatare.github.io/">
+  <meta property="og:title" content="Gaurav Katare | AI Safety & Alignment Engineer">
+  <meta property="og:description" content="Software Engineer III at Google London transitioning to Technical AI Safety. Bridging hardened systems engineering, cryptography, and transformer interpretability.">
+  <meta property="og:image" content="assets/images/avatar.svg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="layout">
+    <!-- ==========================================
+         SIDEBAR (Fixed on Desktop, Stacked on Mobile)
+         ========================================== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="profile-section">
+        <div class="headshot">
+          <!-- Fallback hierarchy: Checks for profile.jpg, defaults to avatar.svg -->
+          <img src="assets/images/avatar.svg" 
+               onerror="this.onerror=null; this.src='assets/images/avatar.svg';" 
+               alt="Gaurav Katare Headshot">
+        </div>
+
+        <h1 class="profile-name">Gaurav Katare</h1>
+        <div class="profile-title">SWE III @ Google London</div>
+        <div class="profile-subtitle">Transitioning to AI/ML Safety &amp; Alignment Engineering</div>
+
+        <div class="profile-badges">
+          <span class="badge-pill status">Open to Safety Roles</span>
+          <span class="badge-pill">ARENA 3.0 Fellow</span>
+          <span class="badge-pill">BlueDot AI Safety</span>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Sidebar Navigation">
+        <ul class="sidebar-nav">
+          <li><a href="#about" class="active">About Me</a></li>
+          <li><a href="#focus">Safety Focus Areas</a></li>
+          <li><a href="#lab">Interactive Circuit Lab</a></li>
+          <li><a href="#projects">Research &amp; Projects</a></li>
+          <li><a href="#experience">Industry Experience</a></li>
+          <li><a href="#publications">Publications &amp; Education</a></li>
+          <li><a href="#honors">Competitive Coding</a></li>
+          <li><a href="#notes">Distillations &amp; Notes</a></li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Contacts & Socials -->
+      <div class="sidebar-contacts">
+        <div class="email-box">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <a href="mailto:kataregaurav1501@gmail.com">kataregaurav1501@gmail.com</a>
+          <button class="copy-btn" id="copy-email-btn" title="Copy Email">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </button>
+        </div>
+
+        <div class="social-links">
+          <!-- GitHub -->
+          <a href="https://github.com/GauravKatare" target="_blank" rel="noopener noreferrer" title="GitHub - @GauravKatare">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/gaurav2000" target="_blank" rel="noopener noreferrer" title="LinkedIn - @gaurav2000">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <!-- Google Scholar / Research -->
+          <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" title="Google Scholar">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+          </a>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+          <svg class="theme-icon" viewBox="0 0 24 24" fill="none"><path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="theme-label">Dark Mode</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- ==========================================
+         MAIN CONTENT AREA
+         ========================================== -->
+    <main class="main">
+      <div class="content-inner">
+
+        <!-- ── SECTION: ABOUT ME ── -->
+        <section id="about">
+          <div class="section-header">
+            <h2>About Me</h2>
+          </div>
+
+          <p class="lead-intro">
+            I am a <strong>Software Engineer III at Google London</strong> transitioning into <strong>Technical AI Safety &amp; Alignment Engineering</strong>. My mission is to build verifiable, interpretable, and sandboxed AI systems that remain robust and aligned as models gain autonomous agentic capabilities.
+          </p>
+
+          <p class="body-text">
+            At Google, I design high-throughput distributed infrastructure and security protocols—ranging from architecting <strong>C++ pipelines handling 1TB+ payloads</strong> to designing a <strong>scalable tool registry for LLM agents (MCP &amp; AppFunctions)</strong> with secure resource sandboxing, and integrating quantum-resistant cryptography into Google Play Signing.
+          </p>
+
+          <p class="body-text">
+            I am enrolled in <strong>BlueDot Impact's Technical AI Safety program</strong> and actively studying the <strong>ARENA (Alignment Research Engineer Accelerator) 3.0 curriculum</strong>, focusing on transformer mechanistic interpretability, activation patching, sparse autoencoders (SAEs), and alignment engineering. I also bring deep algorithmic rigor as a <strong>Codeforces Expert (Rating 1749)</strong>, <strong>CodeChef 5-Star (Rating 2034)</strong>, and <strong>IIT JEE Advanced AIR 4683</strong> holder.
+          </p>
+
+          <div class="mission-callout">
+            <h4>Why Systems Engineering Meets AI Safety</h4>
+            As frontier foundation models evolve from passive autocomplete engines into autonomous agentic systems with access to tools, shell APIs, and execution environments, the distinction between software systems engineering, security, and alignment collapses. Ensuring models do not exhibit deceptive scheming, privilege escalation, or reward hacking requires both <em>microscopic interpretability</em> (inspecting transformer circuits) and <em>hardened systems sandboxing</em> (strict runtime isolation and verifiable governance).
+          </div>
+        </section>
+
+        <hr>
+
+        <!-- ── SECTION: RESEARCH & SAFETY FOCUS ── -->
+        <section id="focus">
+          <div class="section-header">
+            <h2>Safety Research Focus Areas</h2>
+          </div>
+
+          <div class="focus-grid">
+            <div class="focus-card">
+              <span class="focus-icon">🔬</span>
+              <h4 class="focus-title">Mechanistic Interpretability</h4>
+              <p class="focus-desc">
+                Reverse-engineering internal transformer circuits. Implementing induction heads, activation patching, path patching, and analyzing residual streams to understand model internals and prevent deceptive alignment.
+              </p>
+            </div>
+
+            <div class="focus-card">
+              <span class="focus-icon">🛡️</span>
+              <h4 class="focus-title">Agent Sandboxing &amp; Governance</h4>
+              <p class="focus-desc">
+                Hardening agent execution environments using Model Context Protocol (MCP) and cryptographic verification to prevent prompt injection, tool hijacking, unauthorized file access, and rogue autonomous behavior.
+              </p>
+            </div>
+
+            <div class="focus-card">
+              <span class="focus-icon">🎯</span>
+              <h4 class="focus-title">Model Evaluations &amp; Scheming</h4>
+              <p class="focus-desc">
+                Designing empirical evaluation benchmarks and red-teaming frameworks to detect whether models behave safely because they are genuinely aligned, or whether they have learned to scheme during testing.
+              </p>
+            </div>
+
+            <div class="focus-card">
+              <span class="focus-icon">⚡</span>
+              <h4 class="focus-title">Safety Infrastructure &amp; Scaling</h4>
+              <p class="focus-desc">
+                Applying production-grade distributed systems (C++, high-concurrency IO, scalable registries) to run large-scale automated interpretability probes, dictionary learning (SAEs), and continuous alignment checks.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <!-- ── SECTION: INTERACTIVE INTERP LAB ── -->
+        <section id="lab">
+          <div class="section-header">
+            <h2>Interactive Safety Lab: Induction Circuit</h2>
+            <span class="lab-badge">ARENA Module 1</span>
+          </div>
+
+          <p class="body-text">
+            In mechanistic interpretability, <strong>induction heads</strong> are the primary 2-layer attention mechanism responsible for in-context learning in transformers (first formalized by Anthropic in <em>A Mathematical Framework for Transformer Circuits</em>). They detect repeated token patterns of the form:
+            <code style="background:var(--code-bg); padding:2px 6px; border-radius:4px; font-family:var(--font-mono); color:var(--code-text);">[A][B] ... [A] ➔ [B]</code>
+          </p>
+
+          <div class="lab-container">
+            <div class="lab-header">
+              <div>
+                <h4 class="lab-title">Transformer Induction Head Visualizer</h4>
+                <p class="lab-subtitle">Test in-context pattern completion and observe circuit ablation in real time.</p>
+              </div>
+            </div>
+
+            <div class="lab-controls">
+              <span style="font-size:0.8rem; font-weight:600; color:var(--text-light); margin-right:4px;">Presets:</span>
+              <button class="lab-preset-btn active" data-preset="alice">Alice &amp; Bob</button>
+              <button class="lab-preset-btn" data-preset="code">Code Function</button>
+              <button class="lab-preset-btn" data-preset="pattern">Greek Tokens</button>
+            </div>
+
+            <div class="lab-input-group">
+              <label for="interp-input" class="lab-input-label">Prompt Token Sequence (Editable):</label>
+              <input type="text" id="interp-input" class="lab-input" value="Alice and Bob went to the park. Later, Alice and">
+            </div>
+
+            <!-- Live Token Stream Display -->
+            <div class="circuit-viz">
+              <div style="font-size:0.78rem; font-weight:700; text-transform:uppercase; color:var(--text-light); margin-bottom:0.6rem;">
+                Residual Stream Tokens &amp; Attention Routing:
+              </div>
+              <div class="token-stream" id="token-stream">
+                <!-- Dynamically populated by interp-demo.js -->
+              </div>
+
+              <!-- Two-Step Circuit Explanation -->
+              <div class="circuit-steps">
+                <div class="circuit-step-card">
+                  <span class="step-badge">Step 1: Layer 0 Previous-Token Head</span>
+                  <div class="step-card-title">Positional Shift</div>
+                  <p class="step-card-body" id="step-l0-desc">
+                    Previous-Token head carries the representation of the preceding token into the key vector of the following token.
+                  </p>
+                </div>
+
+                <div class="circuit-step-card">
+                  <span class="step-badge">Step 2: Layer 1 Induction Head</span>
+                  <div class="step-card-title">QK Match &amp; OV Copy</div>
+                  <p class="step-card-body" id="step-l1-desc">
+                    Induction Head queries current token [A] against previous [A] keys, then routes [B] to logit output via the OV circuit.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Knockout / Ablation Experiment -->
+              <div class="ablation-slider-box">
+                <div class="slider-info">
+                  Circuit Knockout Experiment: <strong>Head Weight: <span id="ablation-val">100%</span></strong>
+                  <div style="font-size:0.75rem; color:var(--text-light);">Simulate causal ablation on the induction head to observe confidence collapse.</div>
+                </div>
+                <input type="range" id="ablation-slider" class="slider-control" min="0" max="100" value="100" aria-label="Ablation weight slider">
+              </div>
+
+              <!-- Output Prediction -->
+              <div class="prediction-outcome">
+                <div>
+                  Next Token Prediction: <span class="outcome-tag" id="pred-token">"Bob"</span>
+                </div>
+                <div>
+                  Induction Confidence: <strong id="pred-prob" style="color:var(--heading);">92.4%</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <!-- ── SECTION: RESEARCH & ENGINEERING PROJECTS ── -->
+        <section id="projects">
+          <div class="section-header">
+            <h2>Selected Projects &amp; Research</h2>
+          </div>
+
+          <!-- Filter Navigation -->
+          <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="safety">AI Safety &amp; Alignment</button>
+            <button class="filter-btn" data-filter="interp">Mechanistic Interp</button>
+            <button class="filter-btn" data-filter="agent">Agent Security &amp; MCP</button>
+            <button class="filter-btn" data-filter="systems">Systems Infrastructure</button>
+          </div>
+
+          <!-- Project 1: LLM Agent Tool Registry & Sandbox -->
+          <article class="project-card" data-category="safety agent systems">
+            <div class="project-meta">
+              <h3 class="project-title">Scalable Agent Tool Registry &amp; Sandboxed Execution (MCP &amp; AppFunctions)</h3>
+              <span class="project-date">Google | 2024 - Present</span>
+            </div>
+            <div class="project-badges">
+              <span class="tag systems">Google Infrastructure</span>
+              <span class="tag">Agent Governance</span>
+              <span class="tag">Model Context Protocol</span>
+              <span class="tag">Sandboxing</span>
+            </div>
+            <p class="project-desc">
+              Designed and deployed a high-QPS, secure tool discovery and execution registry for autonomous LLM agents operating at Google scale. Addressed critical agentic safety vulnerabilities including unauthorized resource invocation, execution privilege escalation, and tool hallucination.
+            </p>
+            <ul class="project-bullets">
+              <li>Architected resilient discovery protocols enabling agents to look up and dynamically bind tools adhering to strict sandbox boundaries and schema validations.</li>
+              <li>Engineered cryptographic isolation layers ensuring sensitive system APIs and external data access tokens are partitioned against indirect prompt injection.</li>
+              <li>Built real-time telemetry and auditing pipelines to log and evaluate multi-step agent trajectories for safety compliance and anomalous behavior detection.</li>
+            </ul>
+            <div class="project-links">
+              <a href="notes/mcp-agent-security.html" class="project-link-btn">Read Architecture Note ➔</a>
+            </div>
+          </article>
+
+          <!-- Project 2: ARENA Transformer Internals & Circuit Reverse Engineering -->
+          <article class="project-card" data-category="safety interp">
+            <div class="project-meta">
+              <h3 class="project-title">Transformer Circuit Reverse-Engineering &amp; Activation Patching</h3>
+              <span class="project-date">ARENA 3.0 Curriculum | 2025</span>
+            </div>
+            <div class="project-badges">
+              <span class="tag interp">Mechanistic Interpretability</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">TransformerLens</span>
+              <span class="tag">ARENA</span>
+            </div>
+            <p class="project-desc">
+              Comprehensive implementation and reverse engineering of transformer architectures from foundational linear algebra to complex circuits. Focused on identifying causal subgraphs responsible for specific linguistic and reasoning capabilities.
+            </p>
+            <ul class="project-bullets">
+              <li>Implemented complete GPT-2 and transformer architectures from scratch in PyTorch with custom attention caching and KV-cache mechanisms.</li>
+              <li>Conducted activation patching and path patching experiments on Indirect Object Identification (IOI) circuits to pinpoint name-mover heads and negative name-movers.</li>
+              <li>Investigated induction heads across multi-layer toy models, analyzing the QK and OV circuit eigenvalue spectra to verify copying and pattern matching properties.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/GauravKatare" target="_blank" rel="noopener noreferrer" class="project-link-btn">View Code on GitHub ➔</a>
+              <a href="notes/induction-heads-arena.html" class="project-link-btn">Interpretability Writeup ➔</a>
+            </div>
+          </article>
+
+          <!-- Project 3: Sparse Autoencoders (SAEs) Feature Dictionary Extraction -->
+          <article class="project-card" data-category="safety interp">
+            <div class="project-meta">
+              <h3 class="project-title">Dictionary Learning with Sparse Autoencoders (SAEs)</h3>
+              <span class="project-date">ARENA &amp; Independent Study | 2025</span>
+            </div>
+            <div class="project-badges">
+              <span class="tag interp">Mechanistic Interp</span>
+              <span class="tag">Dictionary Learning</span>
+              <span class="tag">Superposition</span>
+              <span class="tag">Sparse Autoencoders</span>
+            </div>
+            <p class="project-desc">
+              Tackling the challenge of neural superposition by training sparse autoencoders to disentangle polysemantic neuron activations in transformer residual streams into interpretable, monosemantic feature directions.
+            </p>
+            <ul class="project-bullets">
+              <li>Trained JumpReLU and Top-K sparse autoencoders on intermediate activations of language models to discover latent safety-relevant features.</li>
+              <li>Evaluated dictionary quality using reconstruction loss (CE loss recovered) and feature sparsity metrics (L0 norm, dead feature ratio).</li>
+              <li>Explored automated feature labeling and circuit steering by clamping specific SAE latents during inference.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/GauravKatare" target="_blank" rel="noopener noreferrer" class="project-link-btn">GitHub Repository ➔</a>
+            </div>
+          </article>
+
+          <!-- Project 4: Recobee AI Script Evaluation Engine -->
+          <article class="project-card" data-category="safety systems">
+            <div class="project-meta">
+              <h3 class="project-title">Recobee: LLM Evaluation &amp; Script Quality Assessment Engine</h3>
+              <span class="project-date">Recobee | 2023 - 2024</span>
+            </div>
+            <div class="project-badges">
+              <span class="tag evals">Model Evals</span>
+              <span class="tag">AWS Bedrock</span>
+              <span class="tag">SageMaker</span>
+              <span class="tag">Python</span>
+            </div>
+            <p class="project-desc">
+              Built an automated evaluation pipeline to analyze full-length television and film scripts using LLMs, assessing multi-faceted criteria including narrative cohesion, character arc consistency, and thematic tone.
+            </p>
+            <ul class="project-bullets">
+              <li>Architected an asynchronous pipeline using AWS Bedrock, SageMaker, and AWS Lambda to process large-context documents with chunked evaluation strategies.</li>
+              <li>Formulated multi-prompt rubrics and consistency verification steps to counter LLM self-evaluation hallucinations and output variance.</li>
+              <li>Delivered structured quantitative scoring metrics integrated directly into production studio workflows.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/GauravKatare" target="_blank" rel="noopener noreferrer" class="project-link-btn">Code &amp; Pipelines ➔</a>
+            </div>
+          </article>
+
+          <!-- Project 5: High-Throughput 1TB+ Parallel C++ Ingestion & Cryptographic Signing -->
+          <article class="project-card" data-category="systems">
+            <div class="project-meta">
+              <h3 class="project-title">High-Throughput Parallel Ingestion &amp; Quantum-Resistant Play Signing</h3>
+              <span class="project-date">Google London | 2022 - 2024</span>
+            </div>
+            <div class="project-badges">
+              <span class="tag systems">Distributed Systems</span>
+              <span class="tag">C++</span>
+              <span class="tag">Cryptography &amp; KMS</span>
+              <span class="tag">Security</span>
+            </div>
+            <p class="project-desc">
+              Engineered critical security and distribution infrastructure for Google Play, scaling upload systems to 40 GB payloads and handling petabyte-scale application validation with extreme reliability.
+            </p>
+            <ul class="project-bullets">
+              <li>Engineered a parallel ingestion and storage pipeline in C++ processing 1TB+ payload volumes with zero-copy async IO, optimizing chunking and eliminating tail latency bottlenecks.</li>
+              <li>Integrated post-quantum cryptographic signature validation into Play Signing to future-proof global app verification against quantum adversaries.</li>
+              <li>Restricted over 200+ compromised cryptographic signing certificate instances, safeguarding billions of Android end-users from unauthorized privilege execution.</li>
+            </ul>
+          </article>
+        </section>
+
+        <hr>
+
+        <!-- ── SECTION: EXPERIENCE ── -->
+        <section id="experience">
+          <div class="section-header">
+            <h2>Production Engineering Experience</h2>
+          </div>
+
+          <div class="timeline">
+            <!-- Google -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-role-row">
+                <span class="timeline-role">Software Engineer III</span>
+                <span class="timeline-date">June 2022 – Present</span>
+              </div>
+              <div class="timeline-company">Google &bull; London, United Kingdom</div>
+              <ul class="timeline-bullets">
+                <li>Designed and deployed a scalable tool registry for LLM agents (MCP &amp; AppFunctions), enabling resilient execution of agentic workloads with high-QPS tool discovery and secure system resource access.</li>
+                <li>Architected an automated multi-language translation pipeline powered by LLMs (Python), managing batch prompt inference, response parsing, and error fallback mechanisms during production workflows.</li>
+                <li>Integrated quantum-resistant cryptographic algorithms into Google Play Signing, securing app distributions against quantum computational threat models.</li>
+                <li>Engineered a high-throughput, low-latency parallel ingestion and storage pipeline (C++) handling 1TB+ payload volumes; optimized chunking and async IO to eliminate system bottlenecks.</li>
+                <li>Developed the upload system for serving Windows native games through Google Play. Led various sections collaborating with global teams; project presented at the <strong>Game Developer Conference (GDC) 2025</strong>.</li>
+                <li>Engineered a compression and chunking pipeline that reduced storage footprint during application installation by 50%.</li>
+                <li>Optimized distributed data loading paths and serialization protocols (C++), improving transfer throughput by 20% and significantly reducing tail latency for high-volume network workloads.</li>
+                <li>Scaled Google Play bundle upload capacities from 10 GB to 40 GB, optimizing pipeline throughput and chunk management.</li>
+                <li>Developed a secure Key Management System (KMS) integration allowing major developers (e.g., Meta) to maintain full ownership of cryptographic keys within their own Cloud KMS.</li>
+                <li>Prevented unauthorized sharing of user permissions by restricting 200+ compromised cryptographic signing certificate instances in Google Play.</li>
+                <li>Designed a remote app update system to migrate targeted users off broken or compromised application versions.</li>
+                <li><strong>Technologies:</strong> Java, C++, Python, Dart, KMS, Distributed Systems, Spanner, MCP.</li>
+              </ul>
+            </div>
+
+            <!-- Media.net -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-role-row">
+                <span class="timeline-role">Software Development Engineer</span>
+                <span class="timeline-date">July 2021 – May 2022</span>
+              </div>
+              <div class="timeline-company">Media.net &bull; Mumbai, India</div>
+              <ul class="timeline-bullets">
+                <li>Developed and migrated the common backend infrastructure serving over 600 high-traffic publisher websites.</li>
+                <li>Developed a real-time data streaming pipeline using Apache Kafka to ingest and process ad logs into Google BigQuery for downstream machine learning models, substantially improving data accessibility for predictive ad targeting.</li>
+                <li>Implemented the core buying platform information service, directly powering real-time bidding transactions with high revenue sensitivity.</li>
+                <li><strong>Technologies:</strong> Java, PHP, Kafka, BigQuery, MySQL.</li>
+              </ul>
+            </div>
+
+            <!-- Cisco -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-role-row">
+                <span class="timeline-role">Software Development Engineer Intern</span>
+                <span class="timeline-date">July 2020 – August 2020</span>
+              </div>
+              <div class="timeline-company">Cisco &bull; Bangalore, India</div>
+              <ul class="timeline-bullets">
+                <li>Engineered an end-to-end monitoring and functional health dashboard providing unified operational visibility across distributed services.</li>
+                <li>Built REST APIs exposed by Elasticsearch and developed responsive single-page web applications using ReactJS, Spring Boot, and Docker.</li>
+                <li><strong>Technologies:</strong> ReactJS, Spring Boot, Elasticsearch, Docker, Axios.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <!-- ── SECTION: PUBLICATIONS & ACADEMICS ── -->
+        <section id="publications">
+          <div class="section-header">
+            <h2>Publications &amp; Education</h2>
+          </div>
+
+          <!-- Publication Card -->
+          <article class="pub-item">
+            <h3 class="pub-title">Personality Prediction from text of Social Networking Sites by Combining Myers-Briggs and Big-Five Models</h3>
+            <div class="pub-authors">
+              <strong>Gaurav Katare</strong>, et al.
+            </div>
+            <div class="pub-venue">
+              Peer-Reviewed Publication in Machine Learning &amp; Natural Language Processing
+            </div>
+            <p class="project-desc" style="font-size:0.88rem; margin-bottom:0.75rem;">
+              Developed an integrated NLP classification pipeline combining Myers-Briggs Type Indicator (MBTI) and Big-Five personality dimensions to model latent psychological traits and behavioral tendencies from unstructured social network text data.
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link-btn" data-open-bibtex>Cite (BibTeX)</a>
+              <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" class="project-link-btn">Google Scholar ➔</a>
+            </div>
+          </article>
+
+          <!-- Education Card -->
+          <div style="margin-top:2rem;">
+            <h3 style="font-size:1.05rem; font-weight:700; color:var(--text); margin-bottom:0.8rem;">Education</h3>
+
+            <div class="timeline" style="margin-left:0.5rem;">
+              <div class="timeline-item" style="margin-bottom:1.5rem;">
+                <div class="timeline-marker"></div>
+                <div class="timeline-role-row">
+                  <span class="timeline-role" style="font-size:1rem;">B.Tech in Information Technology</span>
+                  <span class="timeline-date">2017 – 2021</span>
+                </div>
+                <div class="timeline-company" style="font-size:0.9rem;">
+                  Motilal Nehru National Institute of Technology (MNNIT) Prayagraj, UP, India
+                </div>
+                <p class="body-text" style="font-size:0.88rem; margin-bottom:0.25rem;">
+                  <strong>Cumulative Performance Index (CPI):</strong> 9.07 / 10 &bull; Ranked among the <strong>top 10 students</strong> of the department.
+                </p>
+                <p class="body-text" style="font-size:0.84rem; color:var(--text-light);">
+                  Core coursework: Data Structures &amp; Algorithms, Operating Systems, Computer Networks, Database Management Systems, Theory of Computation, Cryptography, Distributed Systems.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-role-row">
+                  <span class="timeline-role" style="font-size:0.95rem;">Senior Secondary Education (CBSE)</span>
+                  <span class="timeline-date">2017</span>
+                </div>
+                <div class="timeline-company" style="font-size:0.86rem;">Mirzapur, UP, India</div>
+                <p class="body-text" style="font-size:0.84rem;">
+                  Class XII (CBSE): 89.8% &bull; Class X (ICSE): 91.6%
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <!-- ── SECTION: COMPETITIVE RIGOR & HONORS ── -->
+        <section id="honors">
+          <div class="section-header">
+            <h2>Competitive Programming &amp; Honors</h2>
+          </div>
+
+          <p class="body-text" style="font-size:0.95rem;">
+            Rigorous algorithmic training provides the mathematical problem-solving speed and debugging discipline essential for reverse-engineering complex neural circuits and verifying safety proofs.
+          </p>
+
+          <div class="honors-grid">
+            <div class="honor-card">
+              <div class="honor-stat">1749</div>
+              <div class="honor-title">Codeforces Expert</div>
+              <div class="honor-desc">Global Best Rank 182. Consistently solved complex dynamic programming, graph theory, and combinatorics under time pressure.</div>
+            </div>
+
+            <div class="honor-card">
+              <div class="honor-stat">2034</div>
+              <div class="honor-title">CodeChef 5-Star</div>
+              <div class="honor-desc">Global Best Rank 42. High percentile rank across multi-hour algorithmic challenges.</div>
+            </div>
+
+            <div class="honor-card">
+              <div class="honor-stat">Top 262</div>
+              <div class="honor-title">Google Kickstart</div>
+              <div class="honor-desc">2021 Round A: Rank 262 &bull; Round B: Rank 501 &bull; Round F: Rank 441.</div>
+            </div>
+
+            <div class="honor-card">
+              <div class="honor-stat">AIR 4683</div>
+              <div class="honor-title">IIT JEE Advanced</div>
+              <div class="honor-desc">Among the top 0.3% of 1.2+ million candidates in India's premier engineering entrance examination. (JEE Main: AIR 4685).</div>
+            </div>
+
+            <div class="honor-card">
+              <div class="honor-stat">Winner</div>
+              <div class="honor-title">CodeStart 2.0</div>
+              <div class="honor-desc">1st Place in annual inter-college ICPC-format team algorithmic coding contest.</div>
+            </div>
+
+            <div class="honor-card">
+              <div class="honor-stat">2nd Runner</div>
+              <div class="honor-title">Insomnia, Avishkar</div>
+              <div class="honor-desc">Global ICPC-style team programming contest with teams across major technical institutions.</div>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <!-- ── SECTION: SAFETY DISTILLATIONS & NOTES ── -->
+        <section id="notes">
+          <div class="section-header">
+            <h2>Safety Distillations &amp; Technical Notes</h2>
+          </div>
+
+          <p class="body-text" style="font-size:0.95rem;">
+            Technical summaries and deep dives written as part of my ARENA study and systems engineering explorations:
+          </p>
+
+          <ul class="notes-list">
+            <li class="note-item">
+              <div class="note-info">
+                <div class="note-title">
+                  <a href="notes/systems-to-safety-transition.html">From Google Production Scale to Frontier AI Safety: Why the Next Frontier of Alignment is Systems Engineering</a>
+                </div>
+                <div class="note-summary">
+                  Reflections on why high-throughput systems, cryptographic signing, and kernel-level sandboxing are crucial to prevent agentic scheming and unintended capability jumps.
+                </div>
+              </div>
+              <div class="note-meta">Essay &bull; 8 min read</div>
+            </li>
+
+            <li class="note-item">
+              <div class="note-info">
+                <div class="note-title">
+                  <a href="notes/mcp-agent-security.html">Securing the Model Context Protocol (MCP): Sandboxing Untrusted Tool Calls in Autonomous Agentic Systems</a>
+                </div>
+                <div class="note-summary">
+                  Lessons from building Google-scale tool registries applied to agent safety: token boundary isolation, permission hierarchies, and mitigation of indirect prompt injections.
+                </div>
+              </div>
+              <div class="note-meta">Technical Deep Dive &bull; 10 min read</div>
+            </li>
+
+            <li class="note-item">
+              <div class="note-info">
+                <div class="note-title">
+                  <a href="notes/induction-heads-arena.html">Deconstructing Induction Circuits in Transformers: An ARENA Implementation Walkthrough</a>
+                </div>
+                <div class="note-summary">
+                  A step-by-step breakdown of 2-layer attention circuits, the mathematical decomposition of QK and OV matrices, and ablation testing in TransformerLens.
+                </div>
+              </div>
+              <div class="note-meta">Tutorial &bull; 12 min read</div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- ── FOOTER ── -->
+        <footer>
+          <div>
+            &copy; 2026 Gaurav Katare &bull; Hosted on GitHub Pages
+          </div>
+          <div>
+            Built with semantic HTML5 &amp; CSS &bull; <a href="#about">Back to Top ↑</a>
+          </div>
+        </footer>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- ==========================================
+       BIBTEX CITATION MODAL
+       ========================================== -->
+  <div class="modal-overlay" id="bibtex-modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <h3 style="font-size:1.1rem; font-weight:700; margin-bottom:0.5rem; color:var(--text);">Cite Publication</h3>
+      <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1rem;">Copy the BibTeX entry below to cite this paper in your academic research:</p>
+      
+      <pre class="bibtex-code">@article{katare_personality_prediction,
+  author    = {Gaurav Katare and collaborators},
+  title     = {Personality Prediction from text of Social Networking Sites by Combining Myers-Briggs and Big-Five Models},
+  year      = {2021},
+  journal   = {Peer-Reviewed Proceedings in Natural Language Processing},
+  url       = {https://gauravkatare.github.io}
+}</pre>
+      
+      <div style="display:flex; justify-content:flex-end; gap:0.6rem;">
+        <button class="project-link-btn" id="copy-bibtex-btn">Copy to Clipboard</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/interp-demo.js"></script>
+</body>
+</html>
